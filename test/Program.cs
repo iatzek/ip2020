@@ -6,7 +6,16 @@ namespace test
     {
         static void Main(string[] args)
         {
-            double a = 1, b = 0, c = -25;
+            double a, b, c;
+
+            Console.WriteLine("ax^2+bx+c=0");
+            Console.WriteLine("Podaj a");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj b");
+            b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj c");
+            c = double.Parse(Console.ReadLine());
+
             double delta = b * b - 4 * a * c;
             double x1 = (-b - Math.Sqrt(delta)) / 2 * a;
             double x2 = (-b + Math.Sqrt(delta)) / 2 * a;
